@@ -91,10 +91,13 @@ width: 1200px;
 padding-left: 15px;
 padding-right: 15px; 
 margin: 0 auto;
- outline: 2px solid red; 
+ /* outline: 2px solid red;  */
 }
 
 /* -------------header-------------- */
+.heder-containers {
+    display: flex;
+}
 .header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -181,14 +184,25 @@ margin-left: auto;
  .contact-item:last-child{
     margin-right: 0px;
 } 
+.heder-mailto-icon,
+.heder-tel-icon {
+    fill: #757575;
+
+}
+.heder-mailto-icon:hover,
+.heder-tel-icon:hover,
+.heder-mailto-icon:focus,
+.heder-tel-icon:focus {
+fill: var(--accent-color);
+}
+    
 
 .header-mailto,
 .header-tel{
     
-    display:block;
-    
-    
-   
+    display:flex;
+    flex-direction: row-reverse;
+    gap: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -205,10 +219,7 @@ margin-left: auto;
 .header-tel:focus{
     color: var(--accent-color)
 }
-.heder-mailto-icon {
-   
-   
-}
+
 
 /* --------------hero------------ */
 .hero{
