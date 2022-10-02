@@ -168,13 +168,14 @@ font-family: Raleway,sans-serif;
  }
  .header-contact{
 display: flex;
+
 margin-left: auto;
 
 
 
  }
 .contact-item {
-    
+   
   margin-right: 50px;
 }
  .contact-item:last-child{
@@ -185,6 +186,8 @@ margin-left: auto;
 .header-tel{
     
     display:block;
+    
+    
    
     padding-top: 32px;
     padding-bottom: 32px;
@@ -201,6 +204,10 @@ margin-left: auto;
 .header-mailto:focus,
 .header-tel:focus{
     color: var(--accent-color)
+}
+.heder-mailto-icon {
+   
+   
 }
 
 /* --------------hero------------ */
@@ -267,16 +274,39 @@ height: 600px;
     padding:  94px 0;
 
 }
-.aside-list{
+.aside-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
 
+    
+    width: 270px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background: #F5F4FA;
+
+    border-radius: 4px;
+}
+.aside-icon{
+   
+
+
+
+
+    
+}
+.aside-list{
     display: flex;
     gap: 30px;
    
     
 }
 .aside-item {
-    max-width: 270px;
-    
+
 }
 .aside-caption{
 text-transform: uppercase;
@@ -348,6 +378,7 @@ display: flex;
 gap: 30px;
 }
 .team-link{
+    
 background: #FFFFFF;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -357,6 +388,7 @@ background: #FFFFFF;
 
 }
 .team-section {
+   
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -380,8 +412,105 @@ background: #FFFFFF;
         letter-spacing: 0.03em;
     
         color: #757575;
+        
 
   }
+  /* -----------ICON TEAM -----------------*/
+ .team-icon-list {
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 206px;
+    height: 44px;
+    gap: 10px;
+ }
+
+ .team-icon-item {
+    
+ }
+
+ .team-icon-link {
+ width: 44px;
+ height: 44px;
+ border-radius: 50%;
+ 
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+ }
+ 
+
+ 
+ .team-icon-link{
+    fill: #AFB1B8;
+ }
+
+ .team-icon-link:hover,
+ .team-icon-link:focus {
+background-color:var(--accent-color);
+fill: var(--background-clip);
+ }
+
+  .team-link-icon:hover {
+    
+      fill: var(--background-clip);
+      
+  }
+  
+
+/* --------------CLIENT------------ */
+.client-titl {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        padding-bottom: 50px;
+        letter-spacing: 0.03em;
+    
+        color: #212121;
+}
+
+.client-list {
+display: flex;
+justify-content: center;
+width: 170px;
+height: 92px;
+margin: 0 auto;
+gap: 30px;
+
+}
+
+.client-item {
+
+}
+
+.client-link {
+    width: 106px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    
+}
+.client-link:hover,
+.client-link:focus {
+border: 1px solid var(--accent-color);
+
+}
+
+.client-icon{
+fill: #AFB1B8;
+}
+.client-icon:hover,
+.client-icon:focus {
+    fill: var(--accent-color);
+    
+}
+
+
 
   /* ---------basement------- */
 
@@ -453,6 +582,58 @@ color: var(--accent-color);
 .footer-mailto:focus,
 .footer-tel:focus {
     color: var(--accent-color)
+}
+
+/* ------FOOTER CONTAINER-------- */
+.footer-containers {
+    display: flex;
+    align-items: baseline;
+}
+.footer-container {
+    width: 206px;
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.footer-container-titl {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.footer-container-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-conrainer-item {
+
+}
+
+.footer-container-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-container-link:hover,
+.footer-container-link:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-container-icon {
+    fill: #FFFFFF;
 }
  /* ---------portofolio batton------- */
 
